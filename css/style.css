@@ -1,0 +1,66 @@
+.website{
+    background-color: rgb(238, 238, 238);
+}
+
+.navigasi{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.navigasi>div{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-size: 14sp;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.logo{
+    margin-right: 75%;
+}
+
+header{
+    text-align: center;
+}
+
+header>h1{
+    padding: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.content>.slide{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    text-align: center;
+    justify-content: flex-start;
+    margin: 50px;
+}
+.content>.slide>.Slideku{
+    width: 700px;
+    height: 400px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    background-color: rgb(205, 205, 205);
+    padding: 50px;
+    margin: 50px;
+}
+
+#cp{
+    margin-right: auto;
+}
+p{
+    text-align: justify;
+}

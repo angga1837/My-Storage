@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tugas Website</title>
 </head>
-<body>
+<body class="website">
+
+    <nav class="navigasi">
+        <img src="FC_Barcelona_logo_logotipo_crest.png" width="40px" height="40px"  alt="" class="logo">
+        <div class="Home">Home</div>
+        <div class="package">Our package</div>
+        <div class="Call-Us">Call Us</div>
+    </nav>
+
+    <header>
+        <h1>Your Trusted Agent travel</h1> 
+        <br>
+        <h3>Your happiness is our happiness</h3>
+    </header>
+
+    <main class="content">
+        <div class="slide">
+            <img class="Slideku" src="Assets/barca.jpg" alt="">
+            <img class="Slideku" src="Assets/Ac milan.jpg" alt="">
+            <img class="Slideku" src="Assets/Arsenal.jpg" alt="">
+        </div>
+
+        <div id="form">
+            <h2 id="cp">Contact person</h2>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+            <br>
+            <br>
+            <form name="form-pesan" onsubmit="return validateform()">
+                <p>Nama: </p>
+                <input placeholder="Nama Depan dan Nama Belakang" type="text" name="nama-panjang"> <!--placeholder itu nilai bayang-bayang awal -->
+                <br>
     
+                <p>Alamat Email Anda:</p>
+                <input placeholder="example@gmail.com" type="text" name="Alamat-Email">
+                <br>
+
+                <p>Apa yang membuatmu tertarik?</p>
+                <option value=""></option>
+                <br>
+    
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+        <script src="js/script.js"></script>
+    </main>
 </body>
 </html>
