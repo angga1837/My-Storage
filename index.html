@@ -9,28 +9,39 @@
 <body class="website">
 
     <nav class="navigasi">
-        <img src="FC_Barcelona_logo_logotipo_crest.png" width="40px" height="40px"  alt="" class="logo">
-        <div class="Home">Home</div>
+        <img src="Assets/logo.png" width="40px" height="40px"  alt="" class="logo">
+        <div class="Home"> Home</div>
         <div class="package">Our package</div>
         <div class="Call-Us">Call Us</div>
     </nav>
 
     <header>
-        <h1>Your Trusted Agent travel</h1> 
+        <h1 id="home">TRAVELANGKAH</h1> 
         <br>
         <h3>Your happiness is our happiness</h3>
     </header>
 
     <main class="content">
+        <section class="slide-dan-form">
         <div class="slide">
-            <img class="Slideku" src="Assets/barca.jpg" alt="">
-            <img class="Slideku" src="Assets/Ac milan.jpg" alt="">
-            <img class="Slideku" src="Assets/Arsenal.jpg" alt="">
+            <img class="Slideku" src="Assets/slide1.jpg" alt="">
+            <img class="Slideku" src="Assets/slide2.jpg" alt="">
+            <img class="Slideku" src="Assets/slide3.jpg" alt="">
+            <div class="ulasan">
+                <p><i>"Liburan jadi menyengkan bersama Travel Agentku." </i></p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="Assets/15170259-raffi-ahmad-final_cover_834x1119.png" alt=""  width="40px" height="40px" style="border-radius: 50%;">
+                    <div style="display: flex; flex-direction: column; padding-left: 10px;">
+                        <div><b>Raffi Ahmad</b></div>
+                        <div><i>Seorang artis: 30</i></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="form">
+        <div class="form">
             <h2 id="cp">Contact person</h2>
-            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+            <p> <i>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</i></p>
             <br>
             <br>
             <form name="form-pesan" onsubmit="return validateform()">
@@ -43,12 +54,121 @@
                 <br>
 
                 <p>Apa yang membuatmu tertarik?</p>
-                <option value=""></option>
+                <select name="Tertarik" id="">
+                    <option value="Harga">Harga</option>
+                    <option value="pengalaman">pengalaman</option>
+                    <option value="Ulasan pengguna">Ulasan pengguna</option>
+                </select>
+                <br>
                 <br>
     
                 <input type="submit" value="Send">
             </form>
         </div>
+        </section>
+    
+        <section class="bagian-fitur" >
+            <div class="Awal-fitur">Bersama TraveLangkaH, kamu bisa pergi ke berbagai tempat dengan nyaman bersama keluarga mu. penasaran apa aja yang kami tawarkan?</div>
+            <div class="list-fitur">
+                <div class="fitur">
+                    <div> 1 </div>
+                    <div class="isi-fitur">
+                        Transportasi berkualitas
+                    </div>
+                </div>
+                <div class="fitur">
+                    <div>2</div>
+                    <div class="isi-fitur">
+                        penyediaan Hotel Terbaik
+                    </div>
+                </div>
+                <div class="fitur">
+                    <div>3</div>
+                    <div class="isi-fitur">
+                        Tempat yang sejuk dan cocok untuk rekreasi
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="Our-package" id="package">
+            <h1>Our package</h1>
+        </section>
+
+        <section class="paket">
+            <div class="semualist">
+
+                <div class="listatasbawah">
+
+                    <div class="list-paket">
+                        <div class="nomor-paket">1</div>
+                        <div class="isi-paket">
+                            <div class="nama-paket">Bali</div>
+                            <div><img src="Assets/bali.jpg" class="foto-paket" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="list-paket">
+                        <div class="nomor-paket">2</div>
+                        <div class="isi-paket">
+                            <div class="nama-paket">Jepang</div>
+                            <div><img src="Assets/jepang.jpg" class="foto-paket" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="list-paket">
+                        <div class="nomor-paket">3</div>
+                        <div class="isi-paket">
+                            <div class="nama-paket">Argentina</div>
+                            <div><img src="Assets/Argentina.jpeg" class="foto-paket" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listatasbawah">
+
+                    <div class="list-paket">
+                        <div class="nomor-paket">4</div>
+                        <div class="isi-paket">
+                            <div class="nama-paket">spanyol</div>
+                            <div><img src="Assets/spanyol.jpg" class="foto-paket" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="list-paket">
+                        <div class="nomor-paket">5</div>
+                        <div class="isi-paket">
+                            <div class="nama-paket">Kanada</div>
+                            <div><img src="Assets/Canada.jpg" class="foto-paket" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="list-paket">
+                        <div class="nomor-paket">6</div>
+                        <div class="isi-paket">
+                            <div class="nama-paket">Mesir</div>
+                            <div><img src="Assets/mesir.jpg" class="foto-paket" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-us" id="Call-Us">
+            <h1>Tunggu apa lagi? Segera hubungi kami</h1>
+            <p>Nikmati berbagai perjalanan yang seru dengan kami</p>
+            <button class="tombol">
+                Call to Action
+            </button>
+        </section>
+
+        <footer class="credit">
+            <h2>TUGAS REVOU</h2>
+            <h4>Dibuat Oleh:</h4>
+            <h4>Jundi Erlangga Luhur Prawira</h4>
+        </footer>
+
 
         <script src="js/script.js"></script>
     </main>
