@@ -1,5 +1,6 @@
 .website{
     background-color: rgb(238, 238, 238);
+    font-family: 'Franklin Gothic Medium';
 }
 
 .navigasi{
@@ -15,10 +16,13 @@
     font-size: 14sp;
     color: rgb(0, 0, 0);
     border: 1px solid black;
+    border-radius: 20px;
 }
 
 .logo{
     margin-right: 75%;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 header{
@@ -27,40 +31,166 @@ header{
 
 header>h1{
     padding: 50px;
+    font-size: 40px;
 }
 
 .content{
     display: flex;
+    flex-direction: column;
+}
+
+.slide-dan-form{
+    display: flex;
     flex-direction: row;
     margin: 50px;
 }
 
-.content>.slide{
+.slide-dan-form>.slide{
     display: flex;
     flex: 2;
-    flex-direction: row;
-    text-align: center;
+    flex-direction: column;
     justify-content: flex-start;
     margin: 50px;
 }
-.content>.slide>.Slideku{
+.slide-dan-form>.slide>.Slideku{
     width: 700px;
     height: 400px;
 }
+.slide-dan-form>.slide>.ulasan{
+    padding: 20px 60px 10px 60px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    text-align: justify;
+}
 
-#form{
+.form{
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(135, 222, 237);
     padding: 50px;
     margin: 50px;
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 20px;
 }
+
+input{
+    height: 40px;
+    width: 100%;
+}
+
+select{
+    height: 40px;
+    width: 100%;
+}
+
+#for
 
 #cp{
     margin-right: auto;
 }
-p{
-    text-align: justify;
+
+.bagian-fitur{
+    margin-right: 40%;padding-left: 5%; padding-bottom: 5%;
+}
+.Awal-fitur{
+    font-size: 23px; padding-bottom: 30px; 
+}
+.list-fitur{
+    display: flex; flex-direction: column; font-size: 30px; padding: 20px; background-color: rgb(135, 222, 237); border-radius: 20px;
+}
+.fitur{
+    display: flex; flex-direction: row; align-items: center; 
+}
+.isi-fitur{
+    padding: 20px;
+}
+
+
+.Our-package{
+    background-color:rgb(135, 222, 237);
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+}
+
+.paket{
+    padding: 30px 0px 60px 0px; border-bottom: 1px solid black;
+}
+.semualist{
+    display: flex; flex-direction: column;
+}
+.listatasbawah{
+    display: flex; justify-content: space-around; padding: 10px;
+}
+.list-paket{
+    display: flex; flex-direction: row;
+}
+.nomor-paket{
+    padding-right: 20px;padding-left: 20px;
+}
+.isi-paket{
+    display: flex; flex-direction: column; padding: 20px; background-color: rgb(135, 222, 237); border: 1px solid black; border-radius: 20px;
+}
+.nama-paket{
+    text-align: center;
+}
+.foto-paket{
+    width: 400px;
+    height: 200px;
+}
+
+.contact-us{
+    align-content: center; text-align: center; padding: 60px;
+}
+.tombol{
+    background-color: rgb(27, 27, 27); color: white; padding: 10px 30px 10px 30px; margin: 30px;
+}
+.credit{
+    padding:20px; border-top: 1px solid black; align-content: center; text-align: center;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .navigasi{
+        flex-direction: column;
+    }
+    .logo{
+        margin-right: 0%;
+        align-self: center;
+        margin: 10px;
+    }
+    .slide-dan-form{
+        flex-direction: column;
+    }
+    .slide-dan-form>.slide>.Slideku{
+        width: 400px;
+        height: 300px;
+    }
+    .bagian-fitur{
+        margin: 20px;
+        align-self: center;
+    }
+    .listatasbawah{
+        display: flex;
+        flex-direction: column;
+    }
+    .list-paket{
+        margin: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
